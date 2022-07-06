@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Blog</title>
+</head>
+
+<body>
+
+    <div data-include="components/navbar/navbar.html"></div>
+
+    <div class="mane-container">
+        <div class="new-post-container">
+            <p class="new-post-header">Create new post</p>
+            <textarea class="new-post-content" name="" id="new-post-content" cols="30" rows="10"></textarea>
+            <button class="btn new-post-button" style="background-color: #00B6FF" onclick="CreatePost()">Create Post</button>
+        </div>
+
+        <div id="posts-container" class="posts-container">
+            <!-- this is just a test to see if it works
+                <div class="post-container">
+                <p class="post-name">Change text function</p>
+                    <div class="post-content">
+                        <p id="txt">body text, your name will apear</p>
+                        <input id="name" class="new-comment-input" type="text" name="inptxt" placeholder="Enter your name">
+                    </div>
+                <div class="post-buttons-container">
+                    <button class="post-footer-button" onclick="DisplayName()">Display your name</button>
+                </div>
+            </div>-->
+        </div>
+    </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="script.js"></script>
+    <script src="firestore.js"></script>
+</body>
+
+</html>

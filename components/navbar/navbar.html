@@ -1,0 +1,57 @@
+<link rel="stylesheet" href="/components/navbar/navbar.css">
+<script src="/components/navbar/navbar.js"></script>
+<nav class="navbar navbar-expand-lg" style="background-color: #00B6FF">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Blog do Eyz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://github.com/EyzRyder">Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://github.com/EyzRyder/blog-simples">repository</a>
+                </li>
+            </ul>
+            <button id="LoginButton" type="button" class="btn" style="background-color: transparent" data-bs-toggle="modal"
+                onclick="DetermineLoginButtonAction()">
+                Login
+            </button>
+            <!--<form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>-->
+        </div>
+    </div>
+</nav>
+
+<!-- Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header modal-header-container">
+                <h5 class="modal-title" id="modal-header-text">Login</h5>
+                <p id="model-error" class="model-error"></p>
+            </div>
+            <div class="modal-body modal-content-container">
+                <input type="email" name="" id="user-email" placeholder="Email" class="form-control model-input">
+                <input type="text" name="" id="user-display-name" placeholder="User Name"
+                    class="form-control model-input">
+                <input type="password" name="" id="user-password" class="form-control model-input"
+                    placeholder="Password">
+                <a id="sign-up-link" onclick="SetModal('signUp')" href="#">Don't have an account? Click here to sign
+                    up</a>
+                <a id="forgot-password-link" onclick="SetModal('forgotPassword')" href="#">forgot your password?</a>
+                <a id="login-link" onclick="SetModal('login')" href="#">Already have an account? Click here to login</a>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button id="submit-modal-button" onclick="SubmitModal()" type="button"
+                    class="btn btn-primary">Login</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,254 @@
+body {
+  background-color: #1d1e2c;
+  color: #ffffff;
+}
+.mane-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+.posts-container,
+.new-post-container {
+  width: 95%;
+}
+.new-post-button {
+  weight: 100px;
+}
+.post-comment-container{
+  width: 85%;
+}
+.link-preview-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link-preview-image{
+  width: 90%;
+}
+.link-preview-text-container{
+  color: white;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.link-preview-description{
+  text-align: center;
+}
+}
+
+@media only screen and (min-width: 769px) {
+.posts-container,
+.new-post-container {
+  width: 50%;
+  margin-left: 2%;
+}
+.new-post-button {
+  weight: 25%;
+}
+.post-comment-container{
+  width: 70%;
+}
+.link-preview-container{
+  display:flex;
+}
+.link-preview-image{
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 120px;
+}
+}
+
+.posts-container,
+.new-post-container {
+  margin-top: 2%;
+}
+
+.post-container,
+.new-post-container {
+  background-color: #22293c;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 3%;
+}
+
+.new-post-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.new-post-header {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.new-post-content {
+  margin-bottom: 3%;
+  height: 51px;
+}
+
+.post-name,
+.post-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.post-name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.post-content {
+  margin: 0;
+  font-size: 20px;
+  margin-bottom: 2%;
+}
+
+.post-buttons-container {
+  display: flex;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.post-footer-button {
+  color: #e3e8e8;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.post-footer-button:focus {
+  outline: 0 !important;
+}
+
+.post-footer-button:hover {
+  color: #00B6FF;
+}
+
+.post-comment-container{
+  display: flex;
+  flex-direction: column;
+  margin-left:7%;
+  background-color: #2f3342;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-bottom: 4%;
+}
+.post-comment-name{
+  margin: 0;
+  font-weight: bold;
+}
+.post-comment-content{
+margin: 0;
+}
+
+.comments-expand-button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #e3e8e8;
+  margin-left: 2%;
+}
+
+.comments-expand-button:hover{
+  color: #00B6FF;
+}
+
+.like-amt-text{
+  padding-left: 15px;
+}
+
+.post-create-comment-container {
+  display: flex;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  align-items: center;
+}
+.new-comment-input {
+  width: 80%;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 8px;
+}
+/* Button send From uiverse.io by @adamgiebl */
+.post-send {
+  margin-left: 5%;
+  font-family: inherit;
+  font-size: 15px;
+  background: #00B6FF;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.post-send span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.post-send svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.post-send:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.post-send:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.post-send:hover span {
+  transform: translateX(5em);
+}
+
+.post-send:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+.link-preview-anchor{
+  text-decoration: none !important;
+}
+
+.link-preview-text-container{
+  color: white;
+}
+.link-preview-title {
+  font-size: 20px;
+  font-weight: 500;
+  
+}

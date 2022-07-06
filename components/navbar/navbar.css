@@ -1,0 +1,17 @@
+
+.model-input {
+  margin-bottom: 10px;
+}
+
+.modal-content-container {
+  display: flex;
+  flex-direction: column;
+}
+.modal-header-container {
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+.model-error {
+  color: red;
+}
